@@ -704,6 +704,158 @@ function fmtDate(d) {
   if (!d || d === 'null') return '—';
   return d.substring(0,10).split('-').reverse().join('/');
 }
+
+// ===== PAYMENT HELPERS =====
+// Centraliza a leitura de pagamentos para o dashboard inteiro.
+// Assim, quando um novo mês for adicionado no JSON, ele entra automaticamente
+// nas somas de Financeiro, Relatórios, Modal e Exportações.
+const MONTHS_PT = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+const MONTH_ALIASES = {
+  'jan':'Janeiro','janeiro':'Janeiro','01':'Janeiro','1':'Janeiro',
+  'fev':'Fevereiro','fevereiro':'Fevereiro','02':'Fevereiro','2':'Fevereiro',
+  'mar':'Março','marco':'Março','março':'Março','03':'Março','3':'Março',
+  'abr':'Abril','abril':'Abril','04':'Abril','4':'Abril',
+  'mai':'Maio','maio':'Maio','05':'Maio','5':'Maio',
+  'jun':'Junho','junho':'Junho','06':'Junho','6':'Junho',
+  'jul':'Julho','julho':'Julho','07':'Julho','7':'Julho',
+  'ago':'Agosto','agosto':'Agosto','08':'Agosto','8':'Agosto',
+  'set':'Setembro','setembro':'Setembro','09':'Setembro','9':'Setembro',
+  'out':'Outubro','outubro':'Outubro','10':'Outubro',
+  'nov':'Novembro','novembro':'Novembro','11':'Novembro',
+  'dez':'Dezembro','dezembro':'Dezembro','12':'Dezembro'
+};
+
+function normalizeTextKey(v) {
+  return String(v ?? '')
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+function normalizeMonthName(v) {
+  if (v === null || v === undefined || v === '') return '';
+  const raw = String(v).trim();
+  const clean = normalizeTextKey(raw);
+  if (MONTH_ALIASES[clean]) return MONTH_ALIASES[clean];
+
+  // Captura casos como "3 pagamento", "3º pagamento", "pagamento 3", "03/2026"
+  const numeric = clean.match(/(?:^|\s)(0?[1-9]|1[0-2])(?:\s|$|\/|-)/);
+  if (numeric && MONTH_ALIASES[numeric[1].replace(/^0/,'')]) {
+    return MONTH_ALIASES[numeric[1].replace(/^0/,'')];
+  }
+
+  // Captura casos como "marco 2026", "valor pago marco", etc.
+  for (const key of Object.keys(MONTH_ALIASES)) {
+    if (clean.includes(key) && key.length >= 3) return MONTH_ALIASES[key];
+  }
+  return raw;
+}
+
+function parseMoney(v) {
+  if (v === null || v === undefined || v === '' || v === 'null') return 0;
+  if (typeof v === 'number') return Number.isFinite(v) ? v : 0;
+
+  let s = String(v).trim();
+  if (!s) return 0;
+
+  // Remove símbolos, espaços e textos, mantendo números e separadores.
+  s = s.replace(/R\$/gi, '').replace(/[^0-9,.-]/g, '');
+
+  // Formato brasileiro: 1.234,56
+  if (s.includes(',') && s.includes('.')) {
+    s = s.replace(/\./g, '').replace(',', '.');
+  } else if (s.includes(',')) {
+    s = s.replace(',', '.');
+  }
+
+  const n = parseFloat(s);
+  return Number.isFinite(n) ? n : 0;
+}
+
+function isPaymentField(key) {
+  const k = normalizeTextKey(key);
+  return (
+    k.includes('valor pago') ||
+    k.includes('valor pago 2026') ||
+    k.includes('pagamento') ||
+    k.includes('pgto') ||
+    k.includes('receita') ||
+    k.includes('mensalidade')
+  );
+}
+
+function getPaymentEntries(c) {
+  const entries = [];
+
+  // Estrutura principal esperada: historico: [{ mes, valorPago, ... }]
+  if (Array.isArray(c?.historico)) {
+    c.historico.forEach((h) => {
+      const valor = parseMoney(h?.valorPago ?? h?.valor_pago ?? h?.valor ?? h?.pago ?? h?.pagamento ?? h?.receita);
+      if (valor > 0) {
+        const mes = normalizeMonthName(h?.mes ?? h?.month ?? h?.competencia ?? h?.referencia ?? h?.data);
+        entries.push({
+          mes: mes || 'Sem mês',
+          valorPago: valor,
+          tipoReceita: h?.tipoReceita ?? h?.tipo_receita ?? h?.tipo ?? ''
+        });
+      }
+    });
+  }
+
+  // Tolerância para JSON vindo do Monday com colunas soltas:
+  // ex.: "Janeiro": 500, "Fevereiro": 500, "Março": 500
+  // ex.: "1 pagamento": 500, "2 pagamento": 500, "3 pagamento": 500
+  Object.keys(c || {}).forEach((key) => {
+    const value = c[key];
+    if (value === null || value === undefined || value === '' || typeof value === 'object') return;
+
+    const keyNorm = normalizeTextKey(key);
+    const maybeMonth = normalizeMonthName(key);
+    const monthDetected = MONTHS_PT.includes(maybeMonth);
+    const paymentLike = isPaymentField(key);
+
+    if (monthDetected || paymentLike) {
+      const valor = parseMoney(value);
+      if (valor > 0) {
+        const mes = monthDetected ? maybeMonth : normalizeMonthName(key);
+        // Evita duplicar pgtoMedio como pagamento realizado.
+        if (keyNorm !== 'pgto medio' && keyNorm !== 'pagamento medio') {
+          entries.push({ mes: mes || 'Sem mês', valorPago: valor, tipoReceita: '' });
+        }
+      }
+    }
+  });
+
+  return entries;
+}
+
+function getPaymentTotal(c) {
+  return getPaymentEntries(c).reduce((sum, h) => sum + parseMoney(h.valorPago), 0);
+}
+
+function getPaymentsByMonth(data) {
+  const paidByMonth = {};
+  MONTHS_PT.forEach(m => paidByMonth[m] = 0);
+
+  data.forEach(c => {
+    getPaymentEntries(c).forEach(h => {
+      const mes = normalizeMonthName(h.mes);
+      if (!paidByMonth.hasOwnProperty(mes)) paidByMonth[mes] = 0;
+      paidByMonth[mes] += parseMoney(h.valorPago);
+    });
+  });
+
+  return paidByMonth;
+}
+
+function getVisiblePaymentMonths(paidByMonth) {
+  const ordered = MONTHS_PT.filter(m => (paidByMonth[m] || 0) > 0);
+  const extras = Object.keys(paidByMonth).filter(m => !MONTHS_PT.includes(m) && (paidByMonth[m] || 0) > 0);
+  return [...ordered, ...extras];
+}
 function getThemeColors() {
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
   return {
@@ -854,8 +1006,7 @@ function renderOverview() {
   const graduadas = d.filter(c=>c.categoria==='Graduada').length;
   const pgtos = d.filter(c=>c.pgtoMedio&&!isNaN(c.pgtoMedio)&&parseFloat(c.pgtoMedio)>0).map(c=>parseFloat(c.pgtoMedio));
   const avgPgto = pgtos.length ? pgtos.reduce((a,b,c)=>a+b+c,0)/pgtos.length : 0;
-  let paid2026 = 0;
-  d.forEach(c => c.historico.forEach(h => { if(h.valorPago&&!isNaN(h.valorPago)&&parseFloat(h.valorPago)>0&&h.data&&h.data.startsWith('2026')) paid2026+=parseFloat(h.valorPago); }));
+  let paid2026 = d.reduce((sum, c) => sum + getPaymentTotal(c), 0);
 
   document.getElementById('kpi-grid-overview').innerHTML = `
     <div class="kpi-card"><div class="kpi-label">Total Empresas</div><div class="kpi-value">${d.length}</div><div class="kpi-sub">no ecossistema</div></div>
@@ -949,89 +1100,93 @@ function renderStartups() {
 
 // ===== FINANCEIRO =====
 function renderFinanceiro() {
-  const cat = document.getElementById('ff-cat')?.value||'';
-  const stat = document.getElementById('ff-status')?.value||'';
-  const tipoPag = document.getElementById('ff-tipopag')?.value||'';
+  const cat = document.getElementById('ff-cat')?.value || '';
+  const stat = document.getElementById('ff-status')?.value || '';
+  const tipoPag = document.getElementById('ff-tipopag')?.value || '';
+
   let d = DATA.slice();
-  if (cat) d=d.filter(c=>c.categoria===cat);
-  if (stat) d=d.filter(c=>c.status===stat);
-  if (tipoPag) d=d.filter(c=>c.tipoPag===tipoPag);
+  if (cat) d = d.filter(c => c.categoria === cat);
+  if (stat) d = d.filter(c => c.status === stat);
+  if (tipoPag) d = d.filter(c => c.tipoPag === tipoPag);
 
-  // Meses padronizados para evitar erro quando o JSON vem do Monday/Excel
-  // Ex.: "Março", "março", "Marco", "MARÇO" serão tratados como o mesmo mês.
-  const months = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
-  const monthAliases = {
-    'janeiro':'Janeiro', 'jan':'Janeiro',
-    'fevereiro':'Fevereiro', 'fev':'Fevereiro',
-    'marco':'Março', 'março':'Março', 'mar':'Março',
-    'abril':'Abril', 'abr':'Abril',
-    'maio':'Maio', 'mai':'Maio',
-    'junho':'Junho', 'jun':'Junho',
-    'julho':'Julho', 'jul':'Julho',
-    'agosto':'Agosto', 'ago':'Agosto',
-    'setembro':'Setembro', 'set':'Setembro',
-    'outubro':'Outubro', 'out':'Outubro',
-    'novembro':'Novembro', 'nov':'Novembro',
-    'dezembro':'Dezembro', 'dez':'Dezembro'
-  };
-  const normalizeMonth = (mes) => {
-    if (!mes) return null;
-    const key = String(mes)
-      .trim()
-      .toLowerCase()
-      .normalize('NFD')
-      .replace(/[\u0300-\u036f]/g,'');
-    return monthAliases[key] || null;
-  };
+  const paidByMonth = getPaymentsByMonth(d);
+  const visMonths = getVisiblePaymentMonths(paidByMonth);
+  const paid2026 = Object.values(paidByMonth).reduce((a,b) => a + parseMoney(b), 0);
 
-  let paid2026=0; const paidByMonth={};
-  months.forEach(m=>paidByMonth[m]=0);
-  d.forEach(c => (c.historico || []).forEach(h => {
-    const valor = parseFloat(h.valorPago);
-    if(!isNaN(valor) && valor > 0) {
-      paid2026 += valor;
-      const mesPadrao = normalizeMonth(h.mes);
-      if(mesPadrao && paidByMonth.hasOwnProperty(mesPadrao)) paidByMonth[mesPadrao] += valor;
-    }
-  }));
-
-  const pgtosByCat={};
+  const pgtosByCat = {};
   d.forEach(c => {
-    if(c.pgtoMedio&&!isNaN(c.pgtoMedio)&&parseFloat(c.pgtoMedio)>0) {
-      const k=c.categoria||'N/A'; if(!pgtosByCat[k]) pgtosByCat[k]=[]; pgtosByCat[k].push(parseFloat(c.pgtoMedio));
+    const pgto = parseMoney(c.pgtoMedio);
+    if (pgto > 0) {
+      const k = c.categoria || 'N/A';
+      if (!pgtosByCat[k]) pgtosByCat[k] = [];
+      pgtosByCat[k].push(pgto);
     }
   });
-  const avgTicket = d.filter(c=>c.pgtoMedio&&parseFloat(c.pgtoMedio)>0).reduce((a,c,_,arr)=>a+parseFloat(c.pgtoMedio)/arr.length,0);
-  const maxPgto = Math.max(0,...d.filter(c=>c.pgtoMedio&&parseFloat(c.pgtoMedio)>0).map(c=>parseFloat(c.pgtoMedio)));
-  const pagantes = d.filter(c=>c.pgtoMedio&&parseFloat(c.pgtoMedio)>0).length;
+
+  const tickets = d.map(c => parseMoney(c.pgtoMedio)).filter(v => v > 0);
+  const avgTicket = tickets.length ? tickets.reduce((a,b) => a + b, 0) / tickets.length : 0;
+  const maxPgto = Math.max(0, ...tickets);
+  const pagantes = d.filter(c => getPaymentTotal(c) > 0 || parseMoney(c.pgtoMedio) > 0).length;
 
   document.getElementById('kpi-fin').innerHTML = `
-    <div class="kpi-card"><div class="kpi-label">Receita Acumulada 2026</div><div class="kpi-value kpi-pos">${fmtCurrency(paid2026)}</div></div>
+    <div class="kpi-card"><div class="kpi-label">Receita Acumulada 2026</div><div class="kpi-value kpi-pos">${fmtCurrency(paid2026)}</div><div class="kpi-sub">${visMonths.length} mês(es) contabilizado(s)</div></div>
     <div class="kpi-card"><div class="kpi-label">Ticket Médio</div><div class="kpi-value">${fmtCurrency(avgTicket)}</div></div>
     <div class="kpi-card"><div class="kpi-label">Maior Contrato</div><div class="kpi-value kpi-teal">${fmtCurrency(maxPgto)}</div></div>
     <div class="kpi-card"><div class="kpi-label">Empresas Pagantes</div><div class="kpi-value">${pagantes}</div></div>
   `;
 
-  // Mostra automaticamente até o último mês com pagamento.
-  // Assim, quando Março entrar no JSON, o gráfico passa a considerar Março sem precisar editar novamente.
-  const lastPaidMonthIndex = months.reduce((last, m, i) => paidByMonth[m] > 0 ? i : last, -1);
-  const visMonths = months.slice(0, Math.max(lastPaidMonthIndex + 1, 4));
-
   const tc = getThemeColors();
-  mkBar('chart-receita', visMonths, [{ label:'Receita (R$)', data:visMonths.map(m=>paidByMonth[m]||0),
-    backgroundColor: visMonths.map((_,i)=>i<=lastPaidMonthIndex?'rgba(44,191,174,0.82)':'rgba(44,191,174,0.32)'),
-    borderColor:'#2CBFAE', borderWidth:1, borderRadius:6 }]);
-  const catL=Object.keys(pgtosByCat); const catA=catL.map(k=>Math.round(pgtosByCat[k].reduce((a,b)=>a+b,0)/pgtosByCat[k].length));
-  mkBar('chart-ticket', catL, [{ label:'Ticket Médio (R$)', data:catA, backgroundColor:['rgba(124,63,192,0.72)','rgba(44,191,174,0.72)','rgba(59,130,246,0.72)','rgba(245,158,11,0.72)'], borderRadius:6 }]);
+  const chartMonths = visMonths.length ? visMonths : MONTHS_PT.slice(0, 3);
+  mkBar('chart-receita', chartMonths, [{
+    label: 'Receita (R$)',
+    data: chartMonths.map(m => paidByMonth[m] || 0),
+    backgroundColor: chartMonths.map((_, i) => ['rgba(44,191,174,0.82)','rgba(124,63,192,0.76)','rgba(59,130,246,0.74)','rgba(245,158,11,0.74)','rgba(34,197,94,0.72)'][i % 5]),
+    borderColor: '#2CBFAE',
+    borderWidth: 1,
+    borderRadius: 6
+  }]);
 
-  const compPaid = d.map(c => { const t=(c.historico || []).filter(h=>h.valorPago&&!isNaN(h.valorPago)).reduce((a,h)=>a+parseFloat(h.valorPago),0); return {nome:c.nome.split(' ').slice(0,2).join(' '),total:t}; }).filter(x=>x.total>0).sort((a,b)=>b.total-a.total).slice(0,15);
+  const catL = Object.keys(pgtosByCat);
+  const catA = catL.map(k => Math.round(pgtosByCat[k].reduce((a,b) => a + b, 0) / pgtosByCat[k].length));
+  mkBar('chart-ticket', catL, [{
+    label: 'Ticket Médio (R$)',
+    data: catA,
+    backgroundColor: ['rgba(124,63,192,0.72)','rgba(44,191,174,0.72)','rgba(59,130,246,0.72)','rgba(245,158,11,0.72)'],
+    borderRadius: 6
+  }]);
+
+  const compPaid = d
+    .map(c => ({ nome: c.nome.split(' ').slice(0,2).join(' '), total: getPaymentTotal(c) }))
+    .filter(x => x.total > 0)
+    .sort((a,b) => b.total - a.total)
+    .slice(0, 15);
+
   destroyChart('chart-rev-empresa');
-  const ctx=document.getElementById('chart-rev-empresa'); if(!ctx) return;
-  charts['chart-rev-empresa']=new Chart(ctx,{
-    type:'bar', data:{labels:compPaid.map(x=>x.nome), datasets:[{label:'Total Pago 2026 (R$)',data:compPaid.map(x=>x.total),backgroundColor:'rgba(124,63,192,0.72)',borderColor:'#7C3FC0',borderWidth:1,borderRadius:4}]},
-    options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',
-      plugins:{legend:{labels:{color:tc.text,font:{size:11}}}},
-      scales:{x:{grid:{color:tc.grid},ticks:{color:tc.text3,font:{size:10},callback:v=>'R$'+v}},y:{grid:{color:'transparent'},ticks:{color:tc.text,font:{size:11}}}}
+  const ctx = document.getElementById('chart-rev-empresa');
+  if (!ctx) return;
+
+  charts['chart-rev-empresa'] = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: compPaid.map(x => x.nome),
+      datasets: [{
+        label: 'Total Pago 2026 (R$)',
+        data: compPaid.map(x => x.total),
+        backgroundColor: 'rgba(124,63,192,0.72)',
+        borderColor: '#7C3FC0',
+        borderWidth: 1,
+        borderRadius: 4
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      indexAxis: 'y',
+      plugins: { legend: { labels: { color: tc.text, font: { size: 11 } } } },
+      scales: {
+        x: { grid: { color: tc.grid }, ticks: { color: tc.text3, font: { size: 10 }, callback: v => 'R$' + v } },
+        y: { grid: { color: 'transparent' }, ticks: { color: tc.text, font: { size: 11 } } }
+      }
     }
   });
 }
@@ -1154,7 +1309,7 @@ function renderReport() {
     const ativas=d.filter(c=>c.status==='Ativa').length;
     const pgtos=d.filter(c=>c.pgtoMedio&&parseFloat(c.pgtoMedio)>0).map(c=>parseFloat(c.pgtoMedio));
     const avgP=pgtos.length?pgtos.reduce((a,b)=>a+b,0)/pgtos.length:0;
-    let totalPaid=0; d.forEach(c=>c.historico.forEach(h=>{if(h.valorPago&&!isNaN(h.valorPago)&&parseFloat(h.valorPago)>0) totalPaid+=parseFloat(h.valorPago);}));
+    let totalPaid = d.reduce((sum, c) => sum + getPaymentTotal(c), 0);
     const totalColab=d.filter(c=>c.colabAtual&&!isNaN(c.colabAtual)).reduce((a,c)=>a+parseInt(c.colabAtual),0);
     cont.innerHTML = `
       <div style="margin-bottom:14px;padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;display:flex;gap:24px;flex-wrap:wrap">
@@ -1194,7 +1349,7 @@ function renderReport() {
           <th>Empresa</th><th>Categoria</th><th>Pgto Médio</th><th>Tipo Pgto</th><th>Total Pago 2026</th><th>Tipo Receita</th>
         </tr></thead><tbody>
           ${d.map(c=>{
-            const total=c.historico.filter(h=>h.valorPago&&!isNaN(h.valorPago)).reduce((a,h)=>a+parseFloat(h.valorPago),0);
+            const total = getPaymentTotal(c);
             return `<tr onclick="openModal(${c.id})" style="cursor:pointer">
               <td class="tbl-name">${c.nome}</td>
               <td>${catBadge(c.categoria)}</td>
@@ -1253,8 +1408,8 @@ function printReport() {
 // ===== MODAL =====
 function openModal(id) {
   const c=DATA.find(x=>x.id===id); if(!c) return;
-  const paid=c.historico.filter(h=>h.valorPago&&!isNaN(h.valorPago)&&parseFloat(h.valorPago)>0);
-  const totalPaid=paid.reduce((a,h)=>a+parseFloat(h.valorPago),0);
+  const paid = getPaymentEntries(c);
+  const totalPaid = paid.reduce((a,h)=>a+parseMoney(h.valorPago),0);
   const fields=[['Setor',c.setor],['Área de Atuação',c.area],['CEO',c.ceo],['CNPJ',c.cnpj],['Telefone',c.telefone],['E-mail',c.email],['Porte',c.porte],['Modelo de Negócio',c.modeloNegocio],['Fase',c.fase?'Fase '+c.fase:null],['Ano Fundação',c.anoFundacao?c.anoFundacao.substring(0,4):null],['Colab. Inicial',c.colabInicial],['Colab. Atual',c.colabAtual],['Clientes Inicial',c.clientesInicial],['Clientes Atual',c.clientesAtual],['Espaço Físico',c.espacoFisico],['Tipo de Pagamento',c.tipoPag],['Tipo de Contrato',c.tipoContrato],['Pgto Médio',c.pgtoMedio?fmtCurrency(c.pgtoMedio):null],['Nº Contrato',c.numContrato],['Data de Entrada',fmtDate(c.dataEntrada)],['Prazo Contrato',fmtDate(c.prazoContrato)],['Status Contrato',c.statusContrato],['Data de Saída',c.dataSaida?fmtDate(c.dataSaida):null],['Inv. Externo',c.invExterno&&c.invExterno!=='Outro'?c.invExterno:null]].filter(([,v])=>v&&v!=='null'&&v!=='—'&&v!=='N/A'&&v!=='Outro');
   document.getElementById('modal-content').innerHTML=`
     <div class="modal-header">
@@ -1285,7 +1440,7 @@ function exportStartups() {
 function exportFinanceiro() {
   const d=DATA;
   const headers=['Nome','Categoria','Pgto Médio','Tipo Pgto','Total Pago 2026'];
-  const rows=d.map(c=>{const t=c.historico.filter(h=>h.valorPago&&!isNaN(h.valorPago)).reduce((a,h)=>a+parseFloat(h.valorPago),0); return [c.nome,c.categoria||'',c.pgtoMedio||'',c.tipoPag||'',t].map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',');});
+  const rows=d.map(c=>{const t=getPaymentTotal(c); return [c.nome,c.categoria||'',c.pgtoMedio||'',c.tipoPag||'',t].map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',');});
   const csv=[headers.join(','),...rows].join('\n');
   const a=document.createElement('a'); a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv); a.download='colearning_financeiro.csv'; a.click();
 }
