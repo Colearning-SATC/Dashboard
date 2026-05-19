@@ -957,15 +957,44 @@ function renderFinanceiro() {
   if (stat) d=d.filter(c=>c.status===stat);
   if (tipoPag) d=d.filter(c=>c.tipoPag===tipoPag);
 
-  const months = ['Janeiro','Fevereiro','março','abril','maio','junho','julho','agosto','setembro','outubro','novembro','dezembro'];
+  // Meses padronizados para evitar erro quando o JSON vem do Monday/Excel
+  // Ex.: "Março", "março", "Marco", "MARÇO" serão tratados como o mesmo mês.
+  const months = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+  const monthAliases = {
+    'janeiro':'Janeiro', 'jan':'Janeiro',
+    'fevereiro':'Fevereiro', 'fev':'Fevereiro',
+    'marco':'Março', 'março':'Março', 'mar':'Março',
+    'abril':'Abril', 'abr':'Abril',
+    'maio':'Maio', 'mai':'Maio',
+    'junho':'Junho', 'jun':'Junho',
+    'julho':'Julho', 'jul':'Julho',
+    'agosto':'Agosto', 'ago':'Agosto',
+    'setembro':'Setembro', 'set':'Setembro',
+    'outubro':'Outubro', 'out':'Outubro',
+    'novembro':'Novembro', 'nov':'Novembro',
+    'dezembro':'Dezembro', 'dez':'Dezembro'
+  };
+  const normalizeMonth = (mes) => {
+    if (!mes) return null;
+    const key = String(mes)
+      .trim()
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g,'');
+    return monthAliases[key] || null;
+  };
+
   let paid2026=0; const paidByMonth={};
   months.forEach(m=>paidByMonth[m]=0);
-  d.forEach(c => c.historico.forEach(h => {
-    if(h.valorPago&&!isNaN(h.valorPago)&&parseFloat(h.valorPago)>0) {
-      paid2026+=parseFloat(h.valorPago);
-      if(paidByMonth.hasOwnProperty(h.mes)) paidByMonth[h.mes]+=parseFloat(h.valorPago);
+  d.forEach(c => (c.historico || []).forEach(h => {
+    const valor = parseFloat(h.valorPago);
+    if(!isNaN(valor) && valor > 0) {
+      paid2026 += valor;
+      const mesPadrao = normalizeMonth(h.mes);
+      if(mesPadrao && paidByMonth.hasOwnProperty(mesPadrao)) paidByMonth[mesPadrao] += valor;
     }
   }));
+
   const pgtosByCat={};
   d.forEach(c => {
     if(c.pgtoMedio&&!isNaN(c.pgtoMedio)&&parseFloat(c.pgtoMedio)>0) {
@@ -982,15 +1011,20 @@ function renderFinanceiro() {
     <div class="kpi-card"><div class="kpi-label">Maior Contrato</div><div class="kpi-value kpi-teal">${fmtCurrency(maxPgto)}</div></div>
     <div class="kpi-card"><div class="kpi-label">Empresas Pagantes</div><div class="kpi-value">${pagantes}</div></div>
   `;
-  const visMonths = months.slice(0,4);
+
+  // Mostra automaticamente até o último mês com pagamento.
+  // Assim, quando Março entrar no JSON, o gráfico passa a considerar Março sem precisar editar novamente.
+  const lastPaidMonthIndex = months.reduce((last, m, i) => paidByMonth[m] > 0 ? i : last, -1);
+  const visMonths = months.slice(0, Math.max(lastPaidMonthIndex + 1, 4));
+
   const tc = getThemeColors();
   mkBar('chart-receita', visMonths, [{ label:'Receita (R$)', data:visMonths.map(m=>paidByMonth[m]||0),
-    backgroundColor: visMonths.map((_,i)=>i<2?'rgba(44,191,174,0.82)':'rgba(44,191,174,0.32)'),
+    backgroundColor: visMonths.map((_,i)=>i<=lastPaidMonthIndex?'rgba(44,191,174,0.82)':'rgba(44,191,174,0.32)'),
     borderColor:'#2CBFAE', borderWidth:1, borderRadius:6 }]);
   const catL=Object.keys(pgtosByCat); const catA=catL.map(k=>Math.round(pgtosByCat[k].reduce((a,b)=>a+b,0)/pgtosByCat[k].length));
   mkBar('chart-ticket', catL, [{ label:'Ticket Médio (R$)', data:catA, backgroundColor:['rgba(124,63,192,0.72)','rgba(44,191,174,0.72)','rgba(59,130,246,0.72)','rgba(245,158,11,0.72)'], borderRadius:6 }]);
 
-  const compPaid = d.map(c => { const t=c.historico.filter(h=>h.valorPago&&!isNaN(h.valorPago)).reduce((a,h)=>a+parseFloat(h.valorPago),0); return {nome:c.nome.split(' ').slice(0,2).join(' '),total:t}; }).filter(x=>x.total>0).sort((a,b)=>b.total-a.total).slice(0,15);
+  const compPaid = d.map(c => { const t=(c.historico || []).filter(h=>h.valorPago&&!isNaN(h.valorPago)).reduce((a,h)=>a+parseFloat(h.valorPago),0); return {nome:c.nome.split(' ').slice(0,2).join(' '),total:t}; }).filter(x=>x.total>0).sort((a,b)=>b.total-a.total).slice(0,15);
   destroyChart('chart-rev-empresa');
   const ctx=document.getElementById('chart-rev-empresa'); if(!ctx) return;
   charts['chart-rev-empresa']=new Chart(ctx,{
