@@ -1,0 +1,3407 @@
+[
+  {
+    "id": 1,
+    "nome": "ABM Consultoria e Assessoria em Gestao de Empresas Ltda.",
+    "categoria": "Endereço Fiscal",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Serviços, Consultoria",
+    "area": "Consultoria em gestão empresarial",
+    "anoFundacao": "2012-01-01",
+    "cnpj": "15.051.621/0001-71",
+    "ceo": "Amanda Barato Mendonça",
+    "telefone": "554896562586",
+    "email": "daiane@caiomartins.com.br",
+    "porte": "Outro",
+    "colabInicial": "1",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Endereço Fiscal",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "150",
+    "espacoFisico": "Não usa",
+    "numContrato": "3604",
+    "dataEntrada": "2024-04-26",
+    "prazoContrato": "2026-04-26",
+    "statusContrato": "À vencer",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "AGP Serviços e participação empresarial Ltda",
+    "categoria": "Endereço Fiscal",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Participações, Serviços",
+    "area": "Participação societária e gestão de investimentos",
+    "anoFundacao": "2017-01-01",
+    "cnpj": "33.934.130/0001-50",
+    "ceo": "Giovana Benetton Borges de Medeiros/ Amanda",
+    "telefone": "554896562586",
+    "email": "daiane@caiomartins.com.br",
+    "porte": "Microempresa",
+    "colabInicial": "3",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Endereço Fiscal",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "150",
+    "espacoFisico": "Não usa",
+    "numContrato": "3605",
+    "dataEntrada": "2024-04-26",
+    "prazoContrato": "2025-04-26",
+    "statusContrato": "Em tratativa",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Mente Laboral Solucoes Psicoempresariais Ltda.",
+    "categoria": "Endereço Fiscal",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Saúde, Serviços",
+    "area": "Psicologia organizacional",
+    "anoFundacao": "2017-01-01",
+    "cnpj": "29.296.227/0001-08",
+    "ceo": "Amanda Barato Mendonça",
+    "telefone": "554896562586",
+    "email": "daiane@caiomartins.com.br",
+    "porte": "Microempresa",
+    "colabInicial": "1",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Endereço Fiscal",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "150",
+    "espacoFisico": "Não usa",
+    "numContrato": "3606",
+    "dataEntrada": "2024-04-26",
+    "prazoContrato": "2025-04-26",
+    "statusContrato": "Em tratativa",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "AM Consultoria e Tecnologia Ltda",
+    "categoria": "Endereço Fiscal",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Tecnologia, Consultoria",
+    "area": "Desenvolvimento de software e consultoria",
+    "anoFundacao": "2025-01-01",
+    "cnpj": "58.828.335/0001-82",
+    "ceo": "Augusto Mandelli (Ada)",
+    "telefone": "554896244427",
+    "email": "mandelli.augusto@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "1",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Endereço Fiscal",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "150",
+    "espacoFisico": "Não usa",
+    "numContrato": "3875",
+    "dataEntrada": "2025-01-22",
+    "prazoContrato": "2026-01-22",
+    "statusContrato": "Em tratativa",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "nome": "SigaWay - Librelato",
+    "categoria": "Endereço Fiscal",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Tecnologia, IoT",
+    "area": "IA e telemetria para transporte",
+    "anoFundacao": "2024-01-01",
+    "cnpj": "43.815.285.0001-21",
+    "ceo": "Sub-empresa da Librelato",
+    "telefone": "554891731262",
+    "email": "jcs@librepar.com.br",
+    "porte": "Outro",
+    "colabInicial": "1",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Endereço Fiscal",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "99",
+    "espacoFisico": "Não usa",
+    "numContrato": "3388",
+    "dataEntrada": "2023-10-11",
+    "prazoContrato": "2026-10-11",
+    "statusContrato": "Ativo",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "nome": "DMS - Carolina Candido Gavilan",
+    "categoria": "Coworking",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Serviços de Informação, Editorial",
+    "area": "Edição e gestão de bases de dados",
+    "anoFundacao": "2017-01-01",
+    "cnpj": "27.563.960/0001-16",
+    "ceo": "Carolina Candido Gavilan",
+    "telefone": "5548996089147",
+    "email": "carolinacandido7@gmail.com",
+    "porte": "MEI",
+    "colabInicial": "1",
+    "colabAtual": "1",
+    "clientesInicial": "0",
+    "clientesAtual": "1",
+    "servicos": "Apenas 1 Cadeira",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "150",
+    "espacoFisico": "Usa Exporadicamente",
+    "numContrato": "3975",
+    "dataEntrada": "2025-05-06",
+    "prazoContrato": "2026-05-06",
+    "statusContrato": "À vencer",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "nome": "Gromo - Anderson Dagostim Gavilan",
+    "categoria": "Coworking",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Marketing Digital",
+    "area": "Marketing digital",
+    "anoFundacao": "2022-01-01",
+    "cnpj": "48.379.487/0001-91",
+    "ceo": "Anderson Dagostim Gavilan",
+    "telefone": "554898264055",
+    "email": "andersondagostim@gmail.com",
+    "porte": "MEI",
+    "colabInicial": "3",
+    "colabAtual": "2",
+    "clientesInicial": "0",
+    "clientesAtual": "6",
+    "servicos": "Apenas 1 Cadeira",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "150",
+    "espacoFisico": "Usa Exporadicamente",
+    "numContrato": "3984",
+    "dataEntrada": "2025-05-13",
+    "prazoContrato": "2026-05-13",
+    "statusContrato": "À vencer",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "nome": "TEX Soluções em Engenharia Ltda",
+    "categoria": "Coworking",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Engenharia",
+    "area": "Serviços de engenharia e inspeções",
+    "anoFundacao": "2022-01-01",
+    "cnpj": "44.873.839/0001-00",
+    "ceo": "Natiel Martins",
+    "telefone": "554891495469",
+    "email": "comercial@texengenharia.com",
+    "porte": "Microempresa",
+    "colabInicial": "2",
+    "colabAtual": "2",
+    "clientesInicial": "0",
+    "clientesAtual": "50",
+    "servicos": "2 Cadeiras Coworking (em transição sala)",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Em Transição",
+    "pgtoMedio": "229",
+    "espacoFisico": "Usa diariamente",
+    "numContrato": "3853",
+    "dataEntrada": "2025-12-17",
+    "prazoContrato": "2025-12-17",
+    "statusContrato": "Em tratativa",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "229",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "229",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "nome": "Weiler Eletrônica Industrial e Automação",
+    "categoria": "Coworking",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Comércio, Automação",
+    "area": "Comércio de materiais elétricos",
+    "anoFundacao": "2023-01-01",
+    "cnpj": "51.330.631/0001-00",
+    "ceo": "Fabiano Melo Ohlweiler",
+    "telefone": "554899349395",
+    "email": "weilerautomacao@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "1",
+    "colabAtual": "1",
+    "clientesInicial": "0",
+    "clientesAtual": "5",
+    "servicos": "Apenas 1 Cadeira",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "150",
+    "espacoFisico": "Usa Exporadicamente",
+    "numContrato": "3978",
+    "dataEntrada": "2025-05-06",
+    "prazoContrato": "2026-05-06",
+    "statusContrato": "À vencer",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "nome": "Eneier Engenharia e Gestao de Energia Ltda",
+    "categoria": "Coworking",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Engenharia",
+    "area": "Projetos e eficiência energética",
+    "anoFundacao": "2025-01-01",
+    "cnpj": "61.943.010/0001-55/ CPF: 112.896.509-77",
+    "ceo": "Alan Jones Paulino Pokomaier",
+    "telefone": "554888237978",
+    "email": "alanjonesppokomaier@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "1",
+    "colabAtual": "1",
+    "clientesInicial": "0",
+    "clientesAtual": "5",
+    "servicos": "Endereço Fiscal",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "150",
+    "espacoFisico": "Não usa",
+    "numContrato": "4125",
+    "dataEntrada": "2025-07-30",
+    "prazoContrato": "2026-07-30",
+    "statusContrato": "Ativo",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "nome": "ADA Lovelance Soluções em Tecnologia Ltda.",
+    "categoria": "Graduada",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Tecnologia",
+    "area": "Desenvolvimento de software customizado",
+    "anoFundacao": "2019-01-01",
+    "cnpj": "35.809.436/0001-00",
+    "ceo": "Gustavo dos Santos De Lucca",
+    "telefone": "554891614644",
+    "email": "gustavodelucca@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "2",
+    "colabAtual": "5",
+    "clientesInicial": "0",
+    "clientesAtual": "12",
+    "servicos": "Sala Privativa",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Novo",
+    "pgtoMedio": "937.5",
+    "espacoFisico": "Usa diariamente",
+    "numContrato": "3938",
+    "dataEntrada": "2025-03-13",
+    "prazoContrato": "2026-03-13",
+    "statusContrato": "Em tratativa",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "937.5",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "937.5",
+        "faturamento": null,
+        "tipoReceita": "Pontual",
+        "resultadoOp": "Lucrativo"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "nome": "Darwin Tecnologia da Informática Ltda.",
+    "categoria": "Graduada",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Tecnologia, Healthtech",
+    "area": "Software para gestão de saúde",
+    "anoFundacao": "2019-01-01",
+    "cnpj": "35.570.169/0001-61",
+    "ceo": "Jeisson Simionato",
+    "telefone": "554899216606",
+    "email": "jeissonsimionato@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "5",
+    "colabAtual": "9",
+    "clientesInicial": "0",
+    "clientesAtual": "220",
+    "servicos": "Sala Privativa",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Novo",
+    "pgtoMedio": "937.5",
+    "espacoFisico": "Usa diariamente",
+    "numContrato": "3949",
+    "dataEntrada": "2025-05-30",
+    "prazoContrato": "2026-07-01",
+    "statusContrato": "À vencer",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "937.5",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "937.5",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "nome": "Proxpect Tecnologia Ltda",
+    "categoria": "Graduada",
+    "status": "Ativa",
+    "fase": null,
+    "setor": "Tecnologia, SaaS",
+    "area": "Plataforma de gestão de compras",
+    "anoFundacao": "2020-01-01",
+    "cnpj": "37.210.577/0001-38",
+    "ceo": "Felipe Sartor",
+    "telefone": "554899530248",
+    "email": "felipedsartor@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "4",
+    "colabAtual": "15",
+    "clientesInicial": "0",
+    "clientesAtual": "70",
+    "servicos": "Sala Privativa",
+    "tipoPag": "Percentual",
+    "tipoContrato": "Em Transição",
+    "pgtoMedio": "1371",
+    "espacoFisico": "Usa diariamente",
+    "numContrato": "3567",
+    "dataEntrada": "2024-04-11",
+    "prazoContrato": "2025-04-11",
+    "statusContrato": "Em tratativa",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "1371",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "1371",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "nome": "FlicApp",
+    "categoria": "Incubada",
+    "status": "Perdida",
+    "fase": "2",
+    "setor": "Tecnologia",
+    "area": "Sistema de gestão de serviços",
+    "anoFundacao": null,
+    "cnpj": "CPF: 140.102.009-79",
+    "ceo": "João Augusto",
+    "telefone": "554896899346",
+    "email": "joaoaugustopfpf@gmail.com",
+    "porte": "Outro",
+    "colabInicial": "1",
+    "colabAtual": null,
+    "clientesInicial": "0",
+    "clientesAtual": null,
+    "servicos": "Taxa fixa de incubação",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Novo",
+    "pgtoMedio": "650",
+    "espacoFisico": "Não usa",
+    "numContrato": "4257",
+    "dataEntrada": "2025-12-18",
+    "prazoContrato": "2029-01-07",
+    "statusContrato": "Não renovou",
+    "dataSaida": "2026-03-31",
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": "2026-01-01",
+        "valorPago": "650",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": "2026-02-01",
+        "valorPago": "650",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": "2026-03-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": "2026-04-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": "2026-05-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": "2026-06-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": "2026-07-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": "2026-08-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": "2026-09-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": "2026-10-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": "2026-11-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": "2026-12-01",
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "nome": "Happy Pet",
+    "categoria": "Incubada",
+    "status": "Ativa",
+    "fase": "2",
+    "setor": "Serviços Pet",
+    "area": "Serviços e comércio para animais",
+    "anoFundacao": null,
+    "cnpj": null,
+    "ceo": "Cristiano Conti Zanetta",
+    "telefone": "554888083667",
+    "email": "zanettacristiano@gmail.com",
+    "porte": "Outro",
+    "colabInicial": "1",
+    "colabAtual": "1",
+    "clientesInicial": "0",
+    "clientesAtual": "5",
+    "servicos": "Taxa fixa de incubação",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Novo",
+    "pgtoMedio": "0",
+    "espacoFisico": "Não usa",
+    "numContrato": "3511",
+    "dataEntrada": "2024-05-17",
+    "prazoContrato": "2027-05-17",
+    "statusContrato": "Ativo",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "0",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "nome": "iService- Gustavo da Silva Matos",
+    "categoria": "Incubada",
+    "status": "Ativa",
+    "fase": "2",
+    "setor": "Educação, Tecnologia",
+    "area": "Treinamento em informática",
+    "anoFundacao": "2025-01-01",
+    "cnpj": "CPF: 105.189.019-55",
+    "ceo": "Gustavo da Silva Matos",
+    "telefone": "554898102751",
+    "email": "gusmatos1998@gmail.com",
+    "porte": "MEI",
+    "colabInicial": "1",
+    "colabAtual": null,
+    "clientesInicial": "0",
+    "clientesAtual": null,
+    "servicos": "Taxa fixa de incubação",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Novo",
+    "pgtoMedio": "650",
+    "espacoFisico": "Não usa",
+    "numContrato": "4246",
+    "dataEntrada": "2025-12-05",
+    "prazoContrato": "2026-12-05",
+    "statusContrato": "Ativo",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "650",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "650",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "nome": "Minha Casa Construida Ltda",
+    "categoria": "Incubada",
+    "status": "Ativa",
+    "fase": "2",
+    "setor": "Tecnologia",
+    "area": "Suporte técnico em TI",
+    "anoFundacao": "2023-01-01",
+    "cnpj": "52.235.067/0001-09/ CPF: 951.127.311-68",
+    "ceo": "Cezar Paulo Santana da Silva",
+    "telefone": "556699026282",
+    "email": "ceo@minhacasaconstruida.com.br",
+    "porte": "Microempresa",
+    "colabInicial": "2",
+    "colabAtual": "3",
+    "clientesInicial": "0",
+    "clientesAtual": null,
+    "servicos": "Apenas 1 Cadeira",
+    "tipoPag": "Percentual",
+    "tipoContrato": "Contrato Novo",
+    "pgtoMedio": "99",
+    "espacoFisico": "Não usa",
+    "numContrato": "3197",
+    "dataEntrada": "2023-06-29",
+    "prazoContrato": "2026-06-29",
+    "statusContrato": "Ativo",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "nome": "SEA Connection Investimentos S/A",
+    "categoria": "Incubada",
+    "status": "Ativa",
+    "fase": "2",
+    "setor": "Financeiro",
+    "area": "Securitização de créditos",
+    "anoFundacao": "2025-01-01",
+    "cnpj": "60.703.936/0001-00",
+    "ceo": "Osvaldir Pereira",
+    "telefone": "554899190569",
+    "email": "osvaldir@thecpay.com",
+    "porte": "Outro",
+    "colabInicial": "2",
+    "colabAtual": "2",
+    "clientesInicial": "0",
+    "clientesAtual": null,
+    "servicos": "Apenas 1 Cadeira",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "150",
+    "espacoFisico": "Não usa",
+    "numContrato": "3439",
+    "dataEntrada": "2025-12-10",
+    "prazoContrato": "2026-12-13",
+    "statusContrato": "Ativo",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "nome": "Useletric - Useletrica Serviços de Engenharia e Tecnologia Ltda",
+    "categoria": "Incubada",
+    "status": "Ativa",
+    "fase": "2",
+    "setor": "Engenharia, Tecnologia, IoT",
+    "area": "Soluções eletrônicas e IoT",
+    "anoFundacao": "2023-01-01",
+    "cnpj": "53.317.744/0001-09",
+    "ceo": "Issacar Souza Brunow",
+    "telefone": "554888659232",
+    "email": "issacarbrunow@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "1",
+    "colabAtual": "3",
+    "clientesInicial": "0",
+    "clientesAtual": "3",
+    "servicos": "Taxa fixa de incubação",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Novo",
+    "pgtoMedio": "650",
+    "espacoFisico": "Não usa",
+    "numContrato": "3573",
+    "dataEntrada": "2024-04-19",
+    "prazoContrato": "2026-04-02",
+    "statusContrato": "Em tratativa",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "650",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "nome": "Ca'e - Flavia Sávio Estética Personalizada Ltda",
+    "categoria": "Incubada",
+    "status": "Ativa",
+    "fase": "2",
+    "setor": "Beleza",
+    "area": "Serviços de estética",
+    "anoFundacao": "2017-01-01",
+    "cnpj": "28.433.362/0001-95",
+    "ceo": "Flavia Zanardo Sávio",
+    "telefone": "554896313747",
+    "email": "flaviasavioestetica@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "1",
+    "colabAtual": "2",
+    "clientesInicial": "0",
+    "clientesAtual": "214",
+    "servicos": "Fechando Contrato",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Novo",
+    "pgtoMedio": "50",
+    "espacoFisico": "Não usa",
+    "numContrato": "4258",
+    "dataEntrada": "2025-12-18",
+    "prazoContrato": "2026-04-02",
+    "statusContrato": "Em tratativa",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "0",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "0",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": null,
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "nome": "Taris Solucoes Tecnologicas LTDA",
+    "categoria": "Incubada",
+    "status": "Ativa",
+    "fase": "3",
+    "setor": "Tecnologia",
+    "area": "Desenvolvimento de software",
+    "anoFundacao": "2024-01-01",
+    "cnpj": "54.247.201/0001-17",
+    "ceo": "Rauan Venancio Martins",
+    "telefone": "554898517835",
+    "email": "taris.software@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "3",
+    "colabAtual": "3",
+    "clientesInicial": "0",
+    "clientesAtual": "5",
+    "servicos": "Apenas 1 Cadeira",
+    "tipoPag": "Percentual",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "496.32",
+    "espacoFisico": "Usa frequentemente",
+    "numContrato": "3481",
+    "dataEntrada": "2024-02-07",
+    "prazoContrato": "2027-02-07",
+    "statusContrato": "Ativo",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "496.32",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "496.32",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "nome": "Zero.ai - Zero Tecnologia  Marketing LTDA",
+    "categoria": "Incubada",
+    "status": "Em tratativa",
+    "fase": "3",
+    "setor": "Tecnologia, IA",
+    "area": "Plataforma de inteligência de receita",
+    "anoFundacao": "2023-01-01",
+    "cnpj": "50.224.169/0001-01",
+    "ceo": "Hyan Dias Tavares",
+    "telefone": "554896593550",
+    "email": "hyan@zeroai.com.br",
+    "porte": "Microempresa",
+    "colabInicial": "1",
+    "colabAtual": "2",
+    "clientesInicial": "0",
+    "clientesAtual": "3",
+    "servicos": "Apenas 1 Cadeira",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "124.5",
+    "espacoFisico": "Usa diariamente",
+    "numContrato": "3089",
+    "dataEntrada": "2023-04-10",
+    "prazoContrato": "2026-01-01",
+    "statusContrato": "Em tratativa",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "150",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "nome": "REPARA - Gustavo da Silva Galski",
+    "categoria": "Incubada",
+    "status": "Ativa",
+    "fase": "1",
+    "setor": "Marketing Digital",
+    "area": "Promoção de vendas",
+    "anoFundacao": "2025-01-01",
+    "cnpj": "62.465.249/0001-20",
+    "ceo": "Gustavo da Silva Galski",
+    "telefone": "554688259734",
+    "email": "Gustavogalako@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "1",
+    "colabAtual": null,
+    "clientesInicial": "0",
+    "clientesAtual": null,
+    "servicos": "Fechando Contrato",
+    "tipoPag": "Outro",
+    "tipoContrato": "Contrato Novo",
+    "pgtoMedio": "0",
+    "espacoFisico": "Outro",
+    "numContrato": null,
+    "dataEntrada": "2026-01-01",
+    "prazoContrato": null,
+    "statusContrato": "Outro",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "0",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "0",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "abril",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "maio",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "junho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "julho",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "agosto",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "setembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "outubro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "novembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "dezembro",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "nome": "Desvon Tecnologia Industrial Ltda",
+    "categoria": "Incubada",
+    "status": "Em tratativa",
+    "fase": "2",
+    "setor": "Automação, IoT",
+    "area": "Automação industrial e IoT",
+    "anoFundacao": "2020-01-01",
+    "cnpj": "36.610.610/0001-54",
+    "ceo": "Rodrigo Grassi",
+    "telefone": "554899282158",
+    "email": "eron@desvon.com.br",
+    "porte": "Microempresa",
+    "colabInicial": "2",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Sem cadeira Fixa",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "99",
+    "espacoFisico": "Usa Exporadicamente",
+    "numContrato": "3941",
+    "dataEntrada": "2025-03-17",
+    "prazoContrato": "2026-04-16",
+    "statusContrato": "Não renovou",
+    "dataSaida": "2026-03-31",
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "nome": "Me conectei",
+    "categoria": "Incubada",
+    "status": "Perdida",
+    "fase": "2",
+    "setor": null,
+    "area": null,
+    "anoFundacao": null,
+    "cnpj": "CPF 015.373.760-39",
+    "ceo": "Fiad Japur Neto Moreira",
+    "telefone": "554888291156",
+    "email": null,
+    "porte": "Outro",
+    "colabInicial": "1",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Sem cadeira Fixa",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "99",
+    "espacoFisico": "Usa Exporadicamente",
+    "numContrato": "3159",
+    "dataEntrada": "2023-06-06",
+    "prazoContrato": "2026-06-06",
+    "statusContrato": "Não renovou",
+    "dataSaida": "2026-03-31",
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "janeiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "nome": "CP8",
+    "categoria": "Outro",
+    "status": "Outro",
+    "fase": null,
+    "setor": null,
+    "area": null,
+    "anoFundacao": null,
+    "cnpj": null,
+    "ceo": null,
+    "telefone": null,
+    "email": null,
+    "porte": "Outro",
+    "colabInicial": null,
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Apenas 1 Cadeira",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "99",
+    "espacoFisico": "Não usa",
+    "numContrato": null,
+    "dataEntrada": null,
+    "prazoContrato": null,
+    "statusContrato": "Não renovou",
+    "dataSaida": null,
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "Fevereiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      },
+      {
+        "mes": "março",
+        "data": null,
+        "valorPago": null,
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "nome": "Log Z Tech Ltda - ME",
+    "categoria": "Incubada",
+    "status": "Perdida",
+    "fase": "3",
+    "setor": "Tecnologia",
+    "area": "Desenvolvimento de Software",
+    "anoFundacao": "2025-01-01",
+    "cnpj": "61.369.496/0001-60",
+    "ceo": "Felipe Paes",
+    "telefone": "554391134462",
+    "email": "fpaes41@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "2",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Sem cadeira Fixa",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "99",
+    "espacoFisico": "Usa Exporadicamente",
+    "numContrato": "3095",
+    "dataEntrada": "2023-01-01",
+    "prazoContrato": "2026-01-01",
+    "statusContrato": "Não renovou",
+    "dataSaida": "2026-03-23",
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "janeiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "nome": "Veneto Capital Consultoria Ltda",
+    "categoria": "Coworking",
+    "status": "Perdida",
+    "fase": null,
+    "setor": "Consultoria",
+    "area": "Consultoria em gestão empresarial",
+    "anoFundacao": "2025-01-01",
+    "cnpj": "59.589.222/0001-34",
+    "ceo": "Ramon Romagna Peterle",
+    "telefone": "554896353696",
+    "email": "ramonpeterle@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "2",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Endereço Fiscal",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "0",
+    "espacoFisico": "Usa Exporadicamente",
+    "numContrato": "3971",
+    "dataEntrada": "2025-04-22",
+    "prazoContrato": "2026-04-22",
+    "statusContrato": "Não renovou",
+    "dataSaida": "2026-01-08",
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "0",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "nome": "Motus Agricola Ltda",
+    "categoria": "Incubada",
+    "status": "Perdida",
+    "fase": "2",
+    "setor": "Serviços",
+    "area": "Pesquisa e desenvolvimento experimental",
+    "anoFundacao": "2023-01-01",
+    "cnpj": "49.179.367/0001-03",
+    "ceo": "Mário Logokenski Filho",
+    "telefone": "554691045191",
+    "email": "mlugokenski@gmail.com",
+    "porte": "Microempresa",
+    "colabInicial": "1",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Sem cadeira Fixa",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "99",
+    "espacoFisico": "Não usa",
+    "numContrato": "3617",
+    "dataEntrada": "2024-06-13",
+    "prazoContrato": "2027-12-15",
+    "statusContrato": "Não renovou",
+    "dataSaida": "2026-01-13",
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "nome": "ALBA Sportwear",
+    "categoria": "Incubada",
+    "status": "Perdida",
+    "fase": "2",
+    "setor": "Comércio, Serviços",
+    "area": "Fabricação e  Comércio varejista de tecidos",
+    "anoFundacao": "2020-01-01",
+    "cnpj": "40.067.820/0001-15",
+    "ceo": "Larissa Porto Natalino",
+    "telefone": "554899525387",
+    "email": "michel.silva@satc.edu.br",
+    "porte": "Microempresa",
+    "colabInicial": "1",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Sem cadeira Fixa",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "0",
+    "espacoFisico": "Usa Exporadicamente",
+    "numContrato": "3087",
+    "dataEntrada": "2023-01-01",
+    "prazoContrato": "2026-01-01",
+    "statusContrato": "Não renovou",
+    "dataSaida": "2026-12-15",
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "0",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "nome": "Fazendo Insetos Bioinsumos",
+    "categoria": "Incubada",
+    "status": "Perdida",
+    "fase": "2",
+    "setor": "Biotécnologia",
+    "area": "Criação de animais",
+    "anoFundacao": "2022-01-01",
+    "cnpj": "47.843.576/0001-84",
+    "ceo": "Michel Alisson",
+    "telefone": "554899283240",
+    "email": "michel.silva@satc.edu.br",
+    "porte": "Microempresa",
+    "colabInicial": "3",
+    "colabAtual": null,
+    "clientesInicial": null,
+    "clientesAtual": null,
+    "servicos": "Sem cadeira Fixa",
+    "tipoPag": "Valor Fixo",
+    "tipoContrato": "Contrato Antigo",
+    "pgtoMedio": "99",
+    "espacoFisico": "Não usa",
+    "numContrato": "3082",
+    "dataEntrada": "2023-01-01",
+    "prazoContrato": "2026-01-01",
+    "statusContrato": "Não renovou",
+    "dataSaida": "2026-01-13",
+    "invInicial": null,
+    "invExterno": "Outro",
+    "modeloNegocio": "Outro",
+    "partTreino": "Outro",
+    "historico": [
+      {
+        "mes": "Janeiro",
+        "data": null,
+        "valorPago": "99",
+        "faturamento": null,
+        "tipoReceita": "Outra",
+        "resultadoOp": "Outra"
+      }
+    ]
+  }
+]
