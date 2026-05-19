@@ -853,7 +853,7 @@ function renderOverview() {
   const incubadas = d.filter(c=>c.categoria==='Incubada'&&c.status==='Ativa').length;
   const graduadas = d.filter(c=>c.categoria==='Graduada').length;
   const pgtos = d.filter(c=>c.pgtoMedio&&!isNaN(c.pgtoMedio)&&parseFloat(c.pgtoMedio)>0).map(c=>parseFloat(c.pgtoMedio));
-  const avgPgto = pgtos.length ? pgtos.reduce((a,b)=>a+b,0)/pgtos.length : 0;
+  const avgPgto = pgtos.length ? pgtos.reduce((a,b,c)=>a+b+c,0)/pgtos.length : 0;
   let paid2026 = 0;
   d.forEach(c => c.historico.forEach(h => { if(h.valorPago&&!isNaN(h.valorPago)&&parseFloat(h.valorPago)>0&&h.data&&h.data.startsWith('2026')) paid2026+=parseFloat(h.valorPago); }));
 
