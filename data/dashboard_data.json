@@ -51,7 +51,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "150",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -182,7 +182,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "150",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -313,7 +313,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "150",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -444,7 +444,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "150",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -575,7 +575,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "99",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -706,7 +706,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "150",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -837,7 +837,7 @@
       {
         "mes": "março",
         "data": null,
-        "valorPago": null,
+        "valorPago": "150",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -968,7 +968,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "229",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -1099,7 +1099,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "150",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -1230,7 +1230,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "150",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -1361,7 +1361,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "937.5",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -1492,7 +1492,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "937.5",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -1623,7 +1623,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "1371",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -1754,7 +1754,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "650",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -2016,7 +2016,7 @@
       {
         "mes": "março",
         "data": null,
-        "valorPago": null,
+        "valorPago": "650",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -2147,7 +2147,7 @@
       {
         "mes": "março",
         "data": null,
-        "valorPago": null,
+        "valorPago": "99",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -2278,7 +2278,7 @@
       {
         "mes": "março",
         "data": null,
-        "valorPago": null,
+        "valorPago": "150",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -2409,7 +2409,7 @@
       {
         "mes": "março",
         "data": null,
-        "valorPago": null,
+        "valorPago": "650",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -2671,7 +2671,7 @@
       {
         "mes": "março",
         "data": null,
-        "valorPago": null,
+        "valorPago": "496.32",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -2802,7 +2802,7 @@
       {
         "mes": "março",
         "data": null,
-        "valorPago": null,
+        "valorPago": "150",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -3064,7 +3064,7 @@
       {
         "mes": "Março",
         "data": null,
-        "valorPago": null,
+        "valorPago": "99",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
@@ -3182,7 +3182,7 @@
       {
         "mes": "março",
         "data": null,
-        "valorPago": null,
+        "valorPago": "99",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
