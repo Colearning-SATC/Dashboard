@@ -444,7 +444,7 @@
       {
         "mes": "março",
         "data": "2026-03-01",
-        "valorPago": null,
+        "valorPago": "150",
         "faturamento": null,
         "tipoReceita": "Outra",
         "resultadoOp": "Outra"
