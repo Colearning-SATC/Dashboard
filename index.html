@@ -705,9 +705,10 @@ function fmtDate(d) {
   return d.substring(0,10).split('-').reverse().join('/');
 }
 
-// ===== FINANCIAL HELPERS - FIXO PARA JAN/FEV/MAR 2026 =====
-// A receita deve considerar SOMENTE historico[].valorPago.
-// Não soma pgtoMedio, não soma meses futuros e não usa data como regra obrigatória.
+// ===== FINANCEIRO - FUNÇÕES ÚNICAS DE CÁLCULO =====
+// Todos os pontos do dashboard devem usar estas funções.
+// Fonte oficial: historico[].valorPago.
+// Meses contabilizados neste ciclo: Janeiro, Fevereiro e Março.
 const FIN_MONTHS_2026 = ['Janeiro', 'Fevereiro', 'Março'];
 
 function normalizeMonthName(v) {
@@ -729,7 +730,6 @@ function normalizeMonthName(v) {
   if (s.startsWith('out')) return 'Outubro';
   if (s.startsWith('nov')) return 'Novembro';
   if (s.startsWith('dez')) return 'Dezembro';
-
   return '';
 }
 
@@ -740,7 +740,7 @@ function parseMoney(v) {
   let s = String(v).trim().replace(/R\$/gi, '').replace(/\s/g, '');
   if (!s) return 0;
 
-  // Aceita "1.234,56", "1234,56", "1234.56" e "1234"
+  // Aceita formatos: 1234.56, 1234,56, 1.234,56
   if (s.includes(',') && s.includes('.')) {
     s = s.replace(/\./g, '').replace(',', '.');
   } else if (s.includes(',')) {
@@ -754,7 +754,6 @@ function parseMoney(v) {
 
 function getPaymentEntries(c) {
   if (!Array.isArray(c?.historico)) return [];
-
   return c.historico
     .map(h => ({
       mes: normalizeMonthName(h?.mes),
@@ -769,9 +768,7 @@ function getPaymentsByMonth(data, months = FIN_MONTHS_2026) {
 
   data.forEach(c => {
     getPaymentEntries(c).forEach(h => {
-      if (months.includes(h.mes)) {
-        paidByMonth[h.mes] += h.valorPago;
-      }
+      if (months.includes(h.mes)) paidByMonth[h.mes] += h.valorPago;
     });
   });
 
@@ -786,6 +783,18 @@ function getPaymentTotal(c, months = FIN_MONTHS_2026) {
 
 function getDatasetPaymentTotal(data, months = FIN_MONTHS_2026) {
   return data.reduce((sum, c) => sum + getPaymentTotal(c, months), 0);
+}
+
+function getCurrentFinancialMonths() {
+  return FIN_MONTHS_2026;
+}
+
+function getCurrentFinancialTotal(data) {
+  return getDatasetPaymentTotal(data, getCurrentFinancialMonths());
+}
+
+function getCurrentPaymentsByMonth(data) {
+  return getPaymentsByMonth(data, getCurrentFinancialMonths());
 }
 
 function getThemeColors() {
@@ -938,7 +947,7 @@ function renderOverview() {
   const graduadas = d.filter(c=>c.categoria==='Graduada').length;
   const pgtos = d.filter(c=>c.pgtoMedio&&!isNaN(c.pgtoMedio)&&parseFloat(c.pgtoMedio)>0).map(c=>parseFloat(c.pgtoMedio));
   const avgPgto = pgtos.length ? pgtos.reduce((a,b,c)=>a+b+c,0)/pgtos.length : 0;
-  let paid2026 = getDatasetPaymentTotal(d, FIN_MONTHS_2026);
+  let paid2026 = getCurrentFinancialTotal(d);
 
   document.getElementById('kpi-grid-overview').innerHTML = `
     <div class="kpi-card"><div class="kpi-label">Total Empresas</div><div class="kpi-value">${d.length}</div><div class="kpi-sub">no ecossistema</div></div>
@@ -1041,9 +1050,9 @@ function renderFinanceiro() {
   if (stat) d = d.filter(c => c.status === stat);
   if (tipoPag) d = d.filter(c => c.tipoPag === tipoPag);
 
-  const months = FIN_MONTHS_2026;
-  const paidByMonth = getPaymentsByMonth(d, months);
-  const paid2026 = months.reduce((sum, m) => sum + paidByMonth[m], 0);
+  const months = getCurrentFinancialMonths();
+  const paidByMonth = getCurrentPaymentsByMonth(d);
+  const paid2026 = months.reduce((sum, m) => sum + (paidByMonth[m] || 0), 0);
 
   const pgtosByCat = {};
   d.forEach(c => {
@@ -1061,7 +1070,7 @@ function renderFinanceiro() {
   const pagantes = d.filter(c => getPaymentTotal(c, months) > 0).length;
 
   document.getElementById('kpi-fin').innerHTML = `
-    <div class="kpi-card"><div class="kpi-label">Receita Acumulada 2026</div><div class="kpi-value kpi-pos">${fmtCurrency(paid2026)}</div><div class="kpi-sub">Jan + Fev + Mar</div></div>
+    <div class="kpi-card"><div class="kpi-label">Receita Acumulada 2026</div><div class="kpi-value kpi-pos">${fmtCurrency(paid2026)}</div><div class="kpi-sub">Janeiro + Fevereiro + Março</div></div>
     <div class="kpi-card"><div class="kpi-label">Ticket Médio</div><div class="kpi-value">${fmtCurrency(avgTicket)}</div></div>
     <div class="kpi-card"><div class="kpi-label">Maior Contrato</div><div class="kpi-value kpi-teal">${fmtCurrency(maxPgto)}</div></div>
     <div class="kpi-card"><div class="kpi-label">Empresas Pagantes</div><div class="kpi-value">${pagantes}</div></div>
@@ -1239,7 +1248,7 @@ function renderReport() {
     const ativas=d.filter(c=>c.status==='Ativa').length;
     const pgtos=d.filter(c=>c.pgtoMedio&&parseFloat(c.pgtoMedio)>0).map(c=>parseFloat(c.pgtoMedio));
     const avgP=pgtos.length?pgtos.reduce((a,b)=>a+b,0)/pgtos.length:0;
-    let totalPaid = getDatasetPaymentTotal(d, FIN_MONTHS_2026);
+    let totalPaid = getCurrentFinancialTotal(d);
     const totalColab=d.filter(c=>c.colabAtual&&!isNaN(c.colabAtual)).reduce((a,c)=>a+parseInt(c.colabAtual),0);
     cont.innerHTML = `
       <div style="margin-bottom:14px;padding:12px 16px;background:var(--card);border:1px solid var(--border);border-radius:10px;display:flex;gap:24px;flex-wrap:wrap">
@@ -1279,7 +1288,7 @@ function renderReport() {
           <th>Empresa</th><th>Categoria</th><th>Pgto Médio</th><th>Tipo Pgto</th><th>Total Pago 2026</th><th>Tipo Receita</th>
         </tr></thead><tbody>
           ${d.map(c=>{
-            const total=getPaymentTotal(c, FIN_MONTHS_2026);
+            const total=getPaymentTotal(c, getCurrentFinancialMonths());
             return `<tr onclick="openModal(${c.id})" style="cursor:pointer">
               <td class="tbl-name">${c.nome}</td>
               <td>${catBadge(c.categoria)}</td>
@@ -1338,7 +1347,7 @@ function printReport() {
 // ===== MODAL =====
 function openModal(id) {
   const c=DATA.find(x=>x.id===id); if(!c) return;
-  const paid=getPaymentEntries(c).filter(h=>FIN_MONTHS_2026.includes(h.mes));
+  const paid=getPaymentEntries(c).filter(h=>getCurrentFinancialMonths().includes(h.mes));
   const totalPaid=paid.reduce((a,h)=>a+h.valorPago,0);
   const fields=[['Setor',c.setor],['Área de Atuação',c.area],['CEO',c.ceo],['CNPJ',c.cnpj],['Telefone',c.telefone],['E-mail',c.email],['Porte',c.porte],['Modelo de Negócio',c.modeloNegocio],['Fase',c.fase?'Fase '+c.fase:null],['Ano Fundação',c.anoFundacao?c.anoFundacao.substring(0,4):null],['Colab. Inicial',c.colabInicial],['Colab. Atual',c.colabAtual],['Clientes Inicial',c.clientesInicial],['Clientes Atual',c.clientesAtual],['Espaço Físico',c.espacoFisico],['Tipo de Pagamento',c.tipoPag],['Tipo de Contrato',c.tipoContrato],['Pgto Médio',c.pgtoMedio?fmtCurrency(c.pgtoMedio):null],['Nº Contrato',c.numContrato],['Data de Entrada',fmtDate(c.dataEntrada)],['Prazo Contrato',fmtDate(c.prazoContrato)],['Status Contrato',c.statusContrato],['Data de Saída',c.dataSaida?fmtDate(c.dataSaida):null],['Inv. Externo',c.invExterno&&c.invExterno!=='Outro'?c.invExterno:null]].filter(([,v])=>v&&v!=='null'&&v!=='—'&&v!=='N/A'&&v!=='Outro');
   document.getElementById('modal-content').innerHTML=`
@@ -1370,7 +1379,7 @@ function exportStartups() {
 function exportFinanceiro() {
   const d=DATA;
   const headers=['Nome','Categoria','Pgto Médio','Tipo Pgto','Total Pago 2026'];
-  const rows=d.map(c=>{const t=getPaymentTotal(c, FIN_MONTHS_2026); return [c.nome,c.categoria||'',c.pgtoMedio||'',c.tipoPag||'',t].map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',');});
+  const rows=d.map(c=>{const t=getPaymentTotal(c, getCurrentFinancialMonths()); return [c.nome,c.categoria||'',c.pgtoMedio||'',c.tipoPag||'',t].map(v=>'"'+String(v).replace(/"/g,'""')+'"').join(',');});
   const csv=[headers.join(','),...rows].join('\n');
   const a=document.createElement('a'); a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv); a.download='colearning_financeiro.csv'; a.click();
 }
